@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mukhtar Abenov\\Desktop\\flight-test\\FlightAPI\\FlightAPI\\FlightAPI.csproj": {}
+    "C:\\Users\\Mukhtar Abenov\\Desktop\\flight-test\\flightAPI\\FlightAPI\\FlightAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mukhtar Abenov\\Desktop\\flight-test\\FlightAPI\\FlightAPI\\FlightAPI.csproj": {
+    "C:\\Users\\Mukhtar Abenov\\Desktop\\flight-test\\flightAPI\\FlightAPI\\FlightAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mukhtar Abenov\\Desktop\\flight-test\\FlightAPI\\FlightAPI\\FlightAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Mukhtar Abenov\\Desktop\\flight-test\\flightAPI\\FlightAPI\\FlightAPI.csproj",
         "projectName": "FlightAPI",
-        "projectPath": "C:\\Users\\Mukhtar Abenov\\Desktop\\flight-test\\FlightAPI\\FlightAPI\\FlightAPI.csproj",
+        "projectPath": "C:\\Users\\Mukhtar Abenov\\Desktop\\flight-test\\flightAPI\\FlightAPI\\FlightAPI.csproj",
         "packagesPath": "C:\\Users\\Mukhtar Abenov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mukhtar Abenov\\Desktop\\flight-test\\FlightAPI\\FlightAPI\\obj\\",
+        "outputPath": "C:\\Users\\Mukhtar Abenov\\Desktop\\flight-test\\flightAPI\\FlightAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mukhtar Abenov\\AppData\\Roaming\\NuGet\\NuGet.Config",
