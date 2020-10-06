@@ -34,8 +34,8 @@ C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\bin\Debug\netcor
 C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\bin\Debug\netcoreapp3.1\FlightAPI.dll
 C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\bin\Debug\netcoreapp3.1\FlightAPI.pdb
 C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.csproj.CoreCompileInputs.cache
-C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.dll
 C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.pdb
 C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.genruntimeconfig.cache
+C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.csproj.CoreCompileInputs.cache
+C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.MvcApplicationPartsAssemblyInfo.cache

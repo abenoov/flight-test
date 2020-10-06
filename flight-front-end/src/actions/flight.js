@@ -11,7 +11,7 @@ export const fetchAll = () => dispatch => {
     //GET req.
     api.flight().fetchAll()
     .then(response => {
-        // console.log(response)
+         console.log(response)
             dispatch({
                 type: ACTION_TYPES.FETCH_ALL,
                 payload: response.data
