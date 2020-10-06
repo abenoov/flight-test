@@ -38,7 +38,8 @@ const FlightForm = ({classes, ...props}) => {
         values,
         setValues,
         handleInputChange,
-    } = useForm(initialFieldValues)
+        resetForm
+    } = useForm(initialFieldValues, props.setCurrentId)
     
     // Is to fix bug label in drop down menu; Material-ui
     const inputLabel = React.useRef(null);
@@ -51,8 +52,20 @@ const FlightForm = ({classes, ...props}) => {
     const handleSubmit = e => {
         e.preventDefault()
         // console.log(values)
+        if(props.currentId == 0)
         props.createFlight(values, () => {window.alert('Submited')})
+        else
+        props.updateFlight(props.currentId, values, () => {window.alert('Successfully Edited!')} )
+
+        resetForm()
     }
+
+    useEffect(() => {
+        if(props.currentId != 0) 
+        setValues({
+            ...props.flightList.find(x => x.id == props.currentId)
+        })
+    }, [props.currentId])
 
     return (
         <form autoComplete="off" noValidate className = {classes.root} onSubmit = {handleSubmit}>
@@ -129,6 +142,7 @@ const FlightForm = ({classes, ...props}) => {
                         <Button className = {classes.smMargin}
                         variant = "contained"
                         color = "secondary"
+                        onClick = {resetForm}
                         >
                             Reset
                         </Button>

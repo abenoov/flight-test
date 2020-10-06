@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from "react";
 import { connect } from "react-redux";
 import * as actions from "../actions/flight";
-import { Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, withStyles } from "@material-ui/core";
+import { Button, ButtonGroup, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, withStyles } from "@material-ui/core";
 import FlightForm from "./FlightForm";
+import EditIcon from "@material-ui/icons/Edit";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 const styles = theme =>({
     root: {
@@ -17,8 +19,7 @@ const styles = theme =>({
 })
 
 const Flights = ({classes,...props}) => {
-      // const[x, setX] = useState(0)
-    // setX(5)
+    const [currentId, setCurrentId] = useState(0)
 
     useEffect(() => {
         props.fetchAllFlights()
@@ -28,13 +29,14 @@ const Flights = ({classes,...props}) => {
         <Paper className = {classes.paper} elevation = {3}>
             <Grid container>
                 <Grid item xs={3}>
-                    <FlightForm />
+                    <FlightForm {...({ currentId, setCurrentId })} />
                 </Grid>
                 <Grid item xs={9}>
                     <TableContainer>
                         <Table>
                             <TableHead className = {classes.root}>
                                 <TableRow>
+                                    <TableCell></TableCell>
                                     <TableCell>FLIGHT</TableCell>
                                     <TableCell>DEPARTURES</TableCell>
                                     <TableCell>TIME</TableCell>
@@ -48,6 +50,13 @@ const Flights = ({classes,...props}) => {
                                 {
                                     props.flightList.map((record, index) => {
                                         return (<TableRow key = {index} hover>
+                                            <TableCell>
+                                                <ButtonGroup variant = "text">
+                                                    <Button><EditIcon color = "primary"
+                                                    onClick = {() => {setCurrentId(record.id)}}/></Button>
+                                                    <Button><DeleteIcon color = "secondary"/></Button>
+                                                </ButtonGroup>
+                                            </TableCell>
                                             <TableCell>{record.flightName}</TableCell>
                                             <TableCell>{record.fromCity}</TableCell>
                                             <TableCell>{record.fromTimeDate}</TableCell>
