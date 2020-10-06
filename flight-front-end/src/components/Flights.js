@@ -6,6 +6,8 @@ import FlightForm from "./FlightForm";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
 
+
+
 const styles = theme =>({
     root: {
         "& .MuiTableCell-head":{ // styling a class
@@ -24,6 +26,11 @@ const Flights = ({classes,...props}) => {
     useEffect(() => {
         props.fetchAllFlights()
     }, []) //componentDidMount
+
+    const onDelete = id => {
+        if(window.confirm('Are you sure you want to delete this flight?'))
+        props.deleteFlight(id, () => {window.alert('Successfully Deleted!')} )
+    }
 
     return (
         <Paper className = {classes.paper} elevation = {3}>
@@ -54,7 +61,8 @@ const Flights = ({classes,...props}) => {
                                                 <ButtonGroup variant = "text">
                                                     <Button><EditIcon color = "primary"
                                                     onClick = {() => {setCurrentId(record.id)}}/></Button>
-                                                    <Button><DeleteIcon color = "secondary"/></Button>
+                                                    <Button><DeleteIcon color = "secondary"
+                                                    onClick = {() => onDelete(record.id)}/></Button>
                                                 </ButtonGroup>
                                             </TableCell>
                                             <TableCell>{record.flightName}</TableCell>
@@ -81,7 +89,8 @@ const mapStateToProps = state => ({
 })
 
 const mapActionToProps = {
-    fetchAllFlights: actions.fetchAll
+    fetchAllFlights: actions.fetchAll,
+    deleteFlight: actions.Delete
 }
 
 export default connect(mapStateToProps, mapActionToProps)(withStyles(styles)(Flights));
