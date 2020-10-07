@@ -37,5 +37,13 @@ C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\bin\Debug\netcor
 C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.dll
 C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.pdb
 C:\Users\Mukhtar Abenov\Desktop\flight-test\FlightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.genruntimeconfig.cache
+C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.csproj.CoreCompileInputs.cache
 C:\Users\Mukhtar Abenov\Desktop\flight-test\flightAPI\FlightAPI\obj\Debug\netcoreapp3.1\FlightAPI.MvcApplicationPartsAssemblyInfo.cache

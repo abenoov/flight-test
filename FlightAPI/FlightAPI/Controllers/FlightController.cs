@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FlightAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FlightAPI.Controllers
 {
@@ -44,6 +45,8 @@ namespace FlightAPI.Controllers
         // PUT: api/Flight/3
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
+        [Authorize(Roles = "admin")]
+        [Route("getrole")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutFlight(int id, Flight flight)
         {
@@ -73,6 +76,8 @@ namespace FlightAPI.Controllers
         // POST: api/Flight
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
+        [Authorize(Roles = "admin")]
+        [Route("getrole")]
         [HttpPost]
         public async Task<ActionResult<Flight>> PostFlight(Flight flight)
         {
@@ -83,6 +88,8 @@ namespace FlightAPI.Controllers
         }
 
         // DELETE: api/Flight/3
+        [Authorize(Roles = "admin")]
+        [Route("getrole")]
         [HttpDelete("{id}")]
         public async Task<ActionResult<Flight>> DeleteFlight(int id)
         {
